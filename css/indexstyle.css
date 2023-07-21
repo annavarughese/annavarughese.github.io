@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:105vh;
+    width:100%;
+    overflow:hidden;
+    background-image: url(../images/bckg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform:uppercase;
+}
+
+.logo{
+    color:#051747;
+    font-weight: bold;
+    font-size: 26px;
+    padding:20px;
+}
+
+a,
+a.active,
+a.hover,
+a.visited
+{
+    text-decoration:none;
+    color:white;
+}
+
+img{
+    position:absolute;
+    margin: auto;
+    z-index:-1;
+    right:0;
+    top:15%;
+    rotate:28deg;
+    height:120px;
+}
+
+.option{
+    margin-right:10px;
+    font-size: 14px;
+}
+
+.main-cont{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: 16vh auto auto;
+    background-color: #c7cad3;
+    border:solid black 1px;
+    text-align: justify;
+    padding:10px 20px;
+    width:80%;
+    height:50%;
+    line-height: 2;
+    color:black;
+    font-family:'Open Sans';
+}
+
+h2{
+    text-align:center;
+    padding:20px 0;
+    font-family: 'Lobster Two', cursive;
+    /* background: linear-gradient(to bottom right, #081f62 42%, #535f80 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent; */
+    overflow:hidden;
+    font-size: 32px;
+}
+
+.footer-cont{
+    color: white;
+    text-align: center;
+    position:fixed;
+    margin:auto;
+    width: 100%;
+    bottom:0;
+    align-items: center;
+    justify-content: center;
+}

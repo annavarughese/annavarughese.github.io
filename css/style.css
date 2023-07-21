@@ -1,0 +1,142 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Bacasime Antique', serif;
+	background-color: white;
+	background:linear-gradient(to bottom right ,#176B87,#64CCC5,#DAFFFB);
+	background-repeat: no-repeat;
+}
+
+.container{
+	position:relative;
+	width: 290px;
+	height: 380px;
+	overflow: hidden;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #051747, #081f62, #535f80);
+	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+	box-shadow: 5px 20px 50px #000;
+}
+
+#chk{
+	display: none;
+}
+
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+
+label{
+	color: #fff;
+	font-size: 2.1em;
+	justify-content: center;
+	display: flex;
+	margin: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .5s ease-in-out;
+}
+
+input{
+	color:white;
+	font-family:serif;
+	width: 53%;
+	height: 20px;
+	background:none;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	margin: 10px auto;
+	padding: 10px;
+	border: none;
+	border-bottom:1.5px solid black;
+}
+
+input:focus{
+	outline: none;
+}
+
+.signup ::placeholder {
+   text-align: center;	
+   color:white;
+   font-size: 0.7rem;
+}
+
+#eye{
+	position:absolute;
+	color:white;
+	right:12%;
+	bottom:52%;
+}
+
+button{
+	width: 40%;
+	height: 35px;
+	margin: 30px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background:#8a69c9;
+	font-size: 0.8em;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+button:hover{
+	background: #ae93e0 ;
+}
+
+a,
+a:hover,
+a:active,
+a:visited{
+	text-decoration: none;
+	color:white;
+}
+
+.login{
+	height: 360px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-115px);
+	transition: .8s ease-in-out;
+}
+
+.login label{
+	color: black;
+	padding-top: 20px;
+	transform: scale(.6);
+}
+
+.login ::placeholder {
+   text-align: center;	
+   color:black;
+   font-size: 0.7em;
+   cursor:black;
+}
+
+.login input{
+	color:black;
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-350px);
+}
+
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}

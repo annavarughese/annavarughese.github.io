@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signUp/Login Page</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="container">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="Username">
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="pswd" id="password" placeholder="Password">
+           <i class="fa-regular fa-eye-slash fa-xs" id="eye"></i>
+					<button><a href="formpg.html"> Sign up</a></button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="pswd" placeholder="Password">
+					<button><a href="formpg.html"> Login </a></button>
+				</form>
+			</div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+  <script>
+  
+    $("#eye").click(function(){
+     $(this).toggleClass('fa-eye');
+     var x = $("#password").attr("type");
+     if(x==="password"){
+       $("#password").attr("type","text");
+     }else{
+       $("#password").attr("type","password");
+     }
+    });
+  </script>
+</body>
+</html>
